@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1587120315 source:c:\users\yiyir\desktop\nueva carpeta\clases2020\clase 06\tp1\funciones.c
+	"funciones.h"
+
+1587117650 c:\users\yiyir\desktop\nueva carpeta\clases2020\clase 06\tp1\funciones.h
+
+1587119427 source:c:\users\yiyir\desktop\nueva carpeta\clases2020\clase 06\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
