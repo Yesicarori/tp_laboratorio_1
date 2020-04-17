@@ -50,7 +50,6 @@ int main()
 
             printf("\n 3. Calcular todas las operaciones \n 4. Informar resultados. \n 0. Salir \n ");
 
-
         opcion = getInt("Ingrese opcion: ");
 
     switch (opcion){
@@ -81,6 +80,7 @@ int main()
             resultadoMultiplicacion = calcularMultiplicacion(operandoA, operandoB);
             resultadoFactorialA = calcularFactorial(operandoA);
             resultadoFactorialB = calcularFactorial(operandoB);
+            printf("Calculos realizados.");
             system("pause");
             system("cls");
             }
@@ -91,11 +91,11 @@ int main()
             printf("El resultado de %d + %d es: %d \n", operandoA, operandoB, resultadoSuma);
             printf("El resultado de %d - %d es: %d \n", operandoA, operandoB, resultadoResta);
             printf("El resultado de %d * %d es: %d \n", operandoA, operandoB, resultadoMultiplicacion);
-            printf("El resultado de %d / %d es: \n", operandoA, operandoB);
+            printf("El resultado de %d / %d es: ", operandoA, operandoB);
             if (resultadoDivision == -1){
                 printf("No se puede dividir por 0.");
-            }else{ printf("%f", resultadoDivision);}
-            printf("El factorial de A es: %d y El factorial de B es: %d",resultadoFactorialA, resultadoFactorialB);
+            }else{ printf("%.2f", resultadoDivision);}
+            printf("\nEl factorial de A es: %d y El factorial de B es: %d \n", resultadoFactorialA, resultadoFactorialB);
 
             system("pause");
             system("cls");
@@ -104,7 +104,6 @@ int main()
 
         case 0 :
             break;
-
 
         default:
             printf("No es una opción correcta");}

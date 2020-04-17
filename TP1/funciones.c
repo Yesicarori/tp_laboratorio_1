@@ -3,11 +3,8 @@ int getInt(char mensaje[]){
     int numero;
     printf("%s", mensaje);
     scanf("%d", &numero);
-
     return numero;
 }
-
-
 
 int calcularSuma (int operandoA, int operandoB){
     int resultado = operandoA + operandoB;
