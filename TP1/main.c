@@ -36,14 +36,14 @@ int main()
     int resultadoResta;
     float resultadoDivision;
     int resultadoMultiplicacion;
-    int resultadoFactorialA;
-    int resultadoFactorialB;
+    unsigned int resultadoFactorialA;
+    unsigned int resultadoFactorialB;
 
 //Menú
     do{
             if (flagA == 0){
-                printf("\n 1. Ingresar primer operando(A = X)");
-            } else{ printf("\n 1. Ingresar primer operando(A = %d) ", operandoA);}
+                printf(" 1. Ingresar primer operando(A = X)");
+            } else{ printf(" 1. Ingresar primer operando(A = %d) ", operandoA);}
             if (flagB == 0){
                 printf("\n 2. Ingresar segundo operando (B = Y)");
             } else{ printf("\n 2. Ingresar segundo operando (B = %d) ", operandoB);}
@@ -56,15 +56,25 @@ int main()
 
 //Pido los valores de A y B
         case 1:
-            operandoA = getInt("Ingrese el valor de A: ");
-            system("cls");
-            flagA = 1;
+            if(flagA==1){
+                operandoA = getInt("Modifique el valor de A: ");
+                system("cls");
+            }else{
+                operandoA = getInt("Ingrese el valor de A: ");
+                system("cls");
+                flagA = 1;
+            }
             break;
 
         case 2 :
-            operandoB = getInt("Ingrese el valor de B: ");
-            system("cls");
-            flagB = 1;
+            if(flagB==1){
+                operandoB = getInt("Modifique el valor de B: ");
+                system("cls");
+            }else{
+                operandoB = getInt("Ingrese el valor de B: ");
+                system("cls");
+                flagB = 1;
+            }
             break;
 
 //Calculo todos los resultados
@@ -74,15 +84,15 @@ int main()
                 system("pause");
                 system("cls");
             } else{
-            resultadoSuma = calcularSuma(operandoA, operandoB);
-            resultadoResta = calcularResta(operandoA, operandoB);
-            resultadoDivision = calcularDivision(operandoA, operandoB);
-            resultadoMultiplicacion = calcularMultiplicacion(operandoA, operandoB);
-            resultadoFactorialA = calcularFactorial(operandoA);
-            resultadoFactorialB = calcularFactorial(operandoB);
-            printf("Calculos realizados.");
-            system("pause");
-            system("cls");
+                resultadoSuma = calcularSuma(operandoA, operandoB);
+                resultadoResta = calcularResta(operandoA, operandoB);
+                resultadoDivision = calcularDivision(operandoA, operandoB);
+                resultadoMultiplicacion = calcularMultiplicacion(operandoA, operandoB);
+                resultadoFactorialA = calcularFactorial(operandoA);
+                resultadoFactorialB = calcularFactorial(operandoB);
+                printf("Calculos realizados. \n");
+                system("pause");
+                system("cls");
             }
             break;
 
@@ -106,7 +116,10 @@ int main()
             break;
 
         default:
-            printf("No es una opción correcta");}
+            printf("No es una opcion correcta. \n");
+            system("pause");
+            system("cls");
+            }
 
     }while (opcion != 0);
 

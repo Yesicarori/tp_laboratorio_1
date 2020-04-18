@@ -9,12 +9,14 @@
 	<stdlib.h>
 	"funciones.h"
 
-1587120315 source:c:\users\yiyir\desktop\nueva carpeta (3)\tp_laboratorio_1\tp1\funciones.c
+1587176976 source:c:\users\yiyir\desktop\nueva carpeta (3)\tp_laboratorio_1\tp1\funciones.c
+	<stdio.h>
+	<stdlib.h>
 	"funciones.h"
 
-1587117650 c:\users\yiyir\desktop\nueva carpeta (3)\tp_laboratorio_1\tp1\funciones.h
+1587176975 c:\users\yiyir\desktop\nueva carpeta (3)\tp_laboratorio_1\tp1\funciones.h
 
-1587121355 source:c:\users\yiyir\desktop\nueva carpeta (3)\tp_laboratorio_1\tp1\main.c
+1587177406 source:c:\users\yiyir\desktop\nueva carpeta (3)\tp_laboratorio_1\tp1\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"
